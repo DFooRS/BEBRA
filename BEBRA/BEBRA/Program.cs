@@ -67,12 +67,13 @@ namespace BEBRA
             }
 
             int status = 0;
-            Console.WriteLine("Начата аннексия региона {0}", anneksname);
+            Console.WriteLine("Начата аннексия региона {0}\n", anneksname);
             while (status < 100)
             {
                 Console.Write("Аннексия региона завершена на {0}", status);
-                Console.WriteLine("процентов.");
+                Console.WriteLine("процентов.\n...");
                 status += 10;
+                System.Threading.Thread.Sleep(500);
             }
             Console.Write("Аннексия региона {0}", anneksname);
             Console.Write(" завершена успешно.");
