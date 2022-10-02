@@ -8,8 +8,14 @@ namespace BEBRA
 {
     class Program
     {
+        class Region
+        {
+            public string rname;
+            public int id;
+        }
         static void Main(string[] args)
         {
+
             int status = 0;
             Console.WriteLine("Начата аннексия выбранного региона");
             while (status < 100)
